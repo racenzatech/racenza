@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
-dotenv.config();
+dotenv.config(); // Load environment variables
 
 const app = express();
 const PORT = process.env.PORT || 5555;
@@ -13,10 +13,12 @@ app.use(express.json());
 
 // Set up Nodemailer transporter
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // or your preferred email service
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS, // Use an App Password for Gmail
+    pass: process.env.EMAIL_PASS,
   },
 });
 
