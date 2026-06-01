@@ -25,7 +25,7 @@ const ContactSection = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5555/api/contact', {
+      const response = await fetch('https://racenza-back.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-        
+
         {/* Left Side: Contact details & Corporate Information */}
         <div className="lg:col-span-5 flex flex-col justify-between items-start text-left bg-white/10 border border-white/20 p-8 sm:p-10 rounded-3xl backdrop-blur-md shadow-sm">
           <div>
@@ -74,12 +74,12 @@ const ContactSection = () => {
               <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
               <span>Book Consultation</span>
             </div>
-            
+
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-gray-900 mb-6 tracking-tight">
               Start Your Journey <br />
               <span className="text-gold-gradient font-playfair italic">With Racena</span>
             </h2>
-            
+
             <p className="font-inter text-sm sm:text-base text-gray-600 leading-relaxed mb-10">
               Ready to automate your workflows, scale your SaaS products, or build advanced artificial intelligence systems? Get in touch with our USA consulting team.
             </p>
@@ -96,7 +96,7 @@ const ContactSection = () => {
                 <p className="font-inter text-sm font-semibold text-gray-700">racenza.tech@gmail.com</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-4 group">
               <div className="w-10 h-10 rounded-xl bg-white/30 border border-white/45 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform duration-300">
                 <Phone className="w-5 h-5 text-racenza-gold" />
@@ -121,10 +121,10 @@ const ContactSection = () => {
 
         {/* Right Side: Interactive Booking Form */}
         <div className="lg:col-span-7 flex flex-col justify-center bg-white/20 border border-white/30 p-8 sm:p-10 rounded-3xl backdrop-blur-lg shadow-glass-glow relative overflow-hidden">
-          
+
           <AnimatePresence mode="wait">
             {!formSubmitted ? (
-              <motion.form 
+              <motion.form
                 key="booking-form"
                 onSubmit={handleSubmit}
                 initial={{ opacity: 1 }}
@@ -252,11 +252,11 @@ const ContactSection = () => {
                 <div className="w-16 h-16 rounded-2xl bg-racenza-gold/10 border border-racenza-gold/30 flex items-center justify-center mb-6 shadow-premium-glow">
                   <CheckCircle2 className="w-8 h-8 text-racenza-gold" />
                 </div>
-                
+
                 <h3 className="font-playfair text-2xl sm:text-3xl font-bold text-gray-900 mb-3 tracking-tight">
                   Consultation Request Received
                 </h3>
-                
+
                 <p className="font-inter text-sm sm:text-base text-gray-600 max-w-md leading-relaxed mb-6">
                   Thank you! Our USA account strategy director will review your details and call you within 1 business hour.
                 </p>
