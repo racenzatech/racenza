@@ -25,7 +25,7 @@ const ContactSection = () => {
     setError('');
 
     try {
-      const response = await fetch('https://racenza-back.onrender.com/api/contact', {
+      const response = await fetch('https://racenza.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
