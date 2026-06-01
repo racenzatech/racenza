@@ -25,12 +25,24 @@ const ContactSection = () => {
     setError('');
 
     try {
-      const response = await fetch('https://racenza.onrender.com/api/contact', {
+      const web3FormsData = {
+        access_key: "c0bc1374-8f70-4383-84bc-02fade754efe",
+        subject: `[Racenza Website] New Inquiry: ${formData.projectType}`,
+        from_name: "Racenza Contact Form",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        projectType: formData.projectType,
+        message: formData.message
+      };
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(web3FormsData),
       });
 
       const data = await response.json();
