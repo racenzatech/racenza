@@ -81,10 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Luxury Glassmorphism Utilities */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.15) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05), inset 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
 .glass-panel-hover {
