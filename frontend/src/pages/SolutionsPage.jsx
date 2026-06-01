@@ -87,7 +87,7 @@ const SolutionsPage = () => {
         {/* Full Hero Image Background (No blur, 100% native clarity) */}
         <img
           src="/Video/Image.png"
-          alt="Racena Solutions Backdrop"
+          alt="Racenza Solutions Backdrop"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 

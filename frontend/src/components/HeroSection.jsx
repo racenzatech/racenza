@@ -82,7 +82,7 @@ const HeroSection = () => {
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.1 }}
             className="text-[13vw] sm:text-[10vw] md:text-[9.5rem] font-playfair font-bold text-gray-900 leading-none tracking-tight mb-2 drop-shadow-md"
           >
-            <span className="text-gold-gradient font-playfair italic">Racena</span>
+            <span className="text-gold-gradient font-playfair italic">Racenza</span>
           </motion.h1>
 
           <motion.div 
@@ -157,7 +157,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-gray-700 max-w-2xl mb-10 leading-relaxed font-inter font-normal"
           >
-            Racena, powered by Macenza, delivers world-class AI solutions, enterprise software, and digital transformation services across the USA.
+            Racenza, powered by Macenza, delivers world-class AI solutions, enterprise software, and digital transformation services across the USA.
           </motion.p>
 
           {/* Actions CTA */}

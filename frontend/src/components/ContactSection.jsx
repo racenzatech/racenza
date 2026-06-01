@@ -77,7 +77,7 @@ const ContactSection = () => {
 
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-gray-900 mb-6 tracking-tight">
               Start Your Journey <br />
-              <span className="text-gold-gradient font-playfair italic">With Racena</span>
+              <span className="text-gold-gradient font-playfair italic">With Racenza</span>
             </h2>
 
             <p className="font-inter text-sm sm:text-base text-gray-600 leading-relaxed mb-10">

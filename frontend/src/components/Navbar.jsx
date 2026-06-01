@@ -51,7 +51,7 @@ const Navbar = () => {
               <span className="text-xl">🌸</span>
             </div>
             <span className="font-playfair font-bold text-2xl tracking-wide text-gray-800 group-hover:text-racenza-gold transition-colors duration-300 relative">
-              Racena
+              Racenza
               <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-racenza-gold group-hover:w-full transition-all duration-300"></span>
             </span>
           </Link>

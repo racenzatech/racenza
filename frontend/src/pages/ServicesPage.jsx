@@ -19,7 +19,7 @@ const ServicesPage = () => {
         {/* Full Hero Image Background (No blur, 100% native clarity) */}
         <img
           src="/Video/Image.png"
-          alt="Racena IT Offerings Backdrop"
+          alt="Racenza IT Offerings Backdrop"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 

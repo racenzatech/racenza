@@ -34,11 +34,11 @@ const AboutSection = () => {
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-gray-900 mb-6 tracking-tight">
             The Synergy: <br />
-            <span className="text-gold-gradient font-playfair italic">Racena & Macenza</span>
+            <span className="text-gold-gradient font-playfair italic">Racenza & Macenza</span>
           </h2>
           
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-inter mb-6">
-            Racena operates as the dedicated USA branch of **Macenza Global Technology**, translating high-end complex engineering into hyper-intuitive digital products.
+            Racenza operates as the dedicated USA branch of **Macenza Global Technology**, translating high-end complex engineering into hyper-intuitive digital products.
           </p>
           
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-inter mb-8">

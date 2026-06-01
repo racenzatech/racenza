@@ -58,7 +58,7 @@ const AboutPage = () => {
         {/* Full Hero Image Background */}
         <img
           src="/Video/Image.png"
-          alt="Racena Corporate Office Background"
+          alt="Racenza Corporate Office Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
 
@@ -93,7 +93,7 @@ const AboutPage = () => {
                 }}
                 className="text-4xl sm:text-6xl lg:text-7xl font-playfair font-bold text-gray-900 tracking-tight leading-none mb-6"
               >
-                About <span className="text-gold-gradient font-playfair italic">Racena</span>
+                About <span className="text-gold-gradient font-playfair italic">Racenza</span>
               </motion.h1>
 
               <motion.p
@@ -149,7 +149,7 @@ const AboutPage = () => {
             </h2>
             
             <p className="font-inter text-base sm:text-lg text-gray-700 leading-relaxed first-letter:text-5xl first-letter:font-playfair first-letter:font-bold first-letter:text-racenza-gold first-letter:mr-3 first-letter:float-left">
-              Racena is the USA-based collaboration of Macenza, created to deliver premium IT services and cutting-edge digital solutions to businesses across the United States. We specialize in artificial intelligence, software development, enterprise automation, web applications, mobile applications, HRMS solutions, SaaS product development, cloud technologies, and complete IT transformation services. Backed by Macenza’s innovation and technical expertise, Racena helps businesses scale with smart, modern, and reliable technology solutions.
+              Racenza is the USA-based collaboration of Macenza, created to deliver premium IT services and cutting-edge digital solutions to businesses across the United States. We specialize in artificial intelligence, software development, enterprise automation, web applications, mobile applications, HRMS solutions, SaaS product development, cloud technologies, and complete IT transformation services. Backed by Macenza’s innovation and technical expertise, Racenza helps businesses scale with smart, modern, and reliable technology solutions.
             </p>
           </motion.div>
         </div>
@@ -239,7 +239,7 @@ const AboutPage = () => {
             </span>
             <div className="w-12 h-[1px] bg-racenza-gold mb-6"></div>
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-gray-900 mb-2 tracking-tight">
-              Why Choose Racena
+              Why Choose Racenza
             </h2>
           </div>
 
@@ -289,7 +289,7 @@ const AboutPage = () => {
             </h2>
             
             <p className="font-inter text-sm sm:text-base text-gray-600 max-w-xl mb-8 leading-relaxed">
-              Partner with Racena to transform your business with innovative digital solutions and high-end software development.
+              Partner with Racenza to transform your business with innovative digital solutions and high-end software development.
             </p>
 
             <Link

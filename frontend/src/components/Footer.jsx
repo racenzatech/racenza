@@ -22,12 +22,12 @@ const Footer = () => {
                 <span className="text-sm">🌸</span>
               </div>
               <span className="font-playfair font-bold text-xl tracking-wide text-white group-hover:text-racenza-gold transition-colors duration-300">
-                Racena
+                Racenza
               </span>
             </a>
             
             <p className="font-inter text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
-              Racena is the premium USA branch of Macenza Global Technology, delivering elite AI-powered IT consulting, custom software, and digital transformation.
+              Racenza is the premium USA branch of Macenza Global Technology, delivering elite AI-powered IT consulting, custom software, and digital transformation.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
         {/* Bottom copyright & Branding watermarks */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col md:flex-row items-center gap-4 text-xs font-inter text-gray-500">
-            <span>© {currentYear} Racena. All rights reserved.</span>
+            <span>© {currentYear} Racenza. All rights reserved.</span>
             <span className="hidden md:inline text-gray-600">|</span>
             <div className="flex gap-4">
               <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
