@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   BrainCircuit, 
@@ -52,7 +51,7 @@ const ServicesDisplay = () => {
   };
 
   return (
-    <div id="services" className="w-full py-8 z-20">
+    <div id="services" className="w-full py-8 z-20 scroll-mt-20">
       
       {/* Decorative luxury section tag */}
       <div className="mb-8 text-center flex flex-col items-center">

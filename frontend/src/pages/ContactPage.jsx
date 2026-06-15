@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import ContactSection from '../components/ContactSection';
@@ -92,7 +91,7 @@ const ContactPage = () => {
       </section>
 
       {/* 2. THE ACTIVE BOOKING FORM BLOCK */}
-      <div id="contact" className="scroll-mt-20 relative z-20 pb-20">
+      <div className="relative z-20 pb-20">
         <ContactSection />
       </div>
 

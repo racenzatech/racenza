@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, Globe, Compass, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, Compass, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,14 +17,14 @@ const Footer = () => {
           
           {/* Column 1: Brand description */}
           <div className="lg:col-span-4 flex flex-col items-start text-left gap-4">
-            <a href="#home" className="flex items-center gap-2 group focus:outline-none">
+            <Link to="/" className="flex items-center gap-2 group focus:outline-none">
               <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-racenza-pink-medium to-white/10 flex items-center justify-center border border-white/20">
                 <span className="text-sm">🌸</span>
               </div>
               <span className="font-playfair font-bold text-xl tracking-wide text-white group-hover:text-racenza-gold transition-colors duration-300">
                 Racenza
               </span>
-            </a>
+            </Link>
             
             <p className="font-inter text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
               Racenza is the premium USA branch of Macenza Global Technology, delivering elite AI-powered IT consulting, custom software, and digital transformation.
@@ -36,10 +36,10 @@ const Footer = () => {
             <span className="font-playfair text-sm text-white font-bold tracking-widest uppercase mb-1">
               Company
             </span>
-            <a href="#home" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Home</a>
-            <a href="#about" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">About Synergy</a>
-            <a href="#features" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Why Choose Us</a>
-            <a href="#contact" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Book Briefing</a>
+            <Link to="/" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Home</Link>
+            <Link to="/#about" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">About Synergy</Link>
+            <Link to="/#features" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Why Choose Us</Link>
+            <Link to="/#contact" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Book Briefing</Link>
           </div>
 
           {/* Column 3: Services Links */}
@@ -47,10 +47,10 @@ const Footer = () => {
             <span className="font-playfair text-sm text-white font-bold tracking-widest uppercase mb-1">
               IT Offerings
             </span>
-            <a href="#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">AI Frameworks</a>
-            <a href="#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">SaaS Products</a>
-            <a href="#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Web App Architecture</a>
-            <a href="#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Custom Automation</a>
+            <Link to="/#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">AI Frameworks</Link>
+            <Link to="/#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">SaaS Products</Link>
+            <Link to="/#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Web App Architecture</Link>
+            <Link to="/#services" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Custom Automation</Link>
           </div>
 
           {/* Column 4: Contact links info */}
@@ -64,11 +64,11 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2 font-inter text-xs sm:text-sm">
               <Phone className="w-4 h-4 text-racenza-gold" />
-              <span>Phone No.</span>
+              <span>+1 (800) 555-0199</span>
             </div>
             <div className="flex items-center gap-2 font-inter text-xs sm:text-sm">
               <Compass className="w-4 h-4 text-racenza-gold" />
-              <span>Address</span>
+              <span>New York, NY, USA</span>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Sparkles, CheckCircle2, Send, Loader2 } from 'lucide-react';
 
@@ -59,8 +59,8 @@ const ContactSection = () => {
       } else {
         setError(data.error || 'Failed to submit form. Please try again.');
       }
-    } catch (err) {
-      setError('Network error. Please make sure the backend server is running and try again.');
+    } catch {
+      setError('Network error. Please check your connection and try again.');
     } finally {
       setLoading(false);
     }
@@ -76,7 +76,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12">
+    <section id="contact" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12 scroll-mt-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
 
         {/* Left Side: Contact details & Corporate Information */}
@@ -115,7 +115,7 @@ const ContactSection = () => {
               </div>
               <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 font-inter">Call us</span>
-                <p className="font-inter text-sm font-semibold text-gray-700">Phone No.</p>
+                <p className="font-inter text-sm font-semibold text-gray-700">+1 (800) 555-0199</p>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const ContactSection = () => {
               </div>
               <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 font-inter">USA HQ</span>
-                <p className="font-inter text-sm font-semibold text-gray-700">Address</p>
+                <p className="font-inter text-sm font-semibold text-gray-700">New York, NY, USA</p>
               </div>
             </div>
           </div>

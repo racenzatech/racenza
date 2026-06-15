@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, CheckCircle2, ShieldAlert, Cpu, HeartHandshake, Eye, Award } from 'lucide-react';
+import { Sparkles, ArrowRight, CheckCircle2, Cpu, Eye, Award } from 'lucide-react';
 
 const AboutPage = () => {
   const servicesList = [
@@ -131,7 +130,7 @@ const AboutPage = () => {
       </section>
 
       {/* 2. WHO WE ARE SECTION */}
-      <section className="w-full py-16 px-6 sm:px-8 lg:px-12 relative z-20">
+      <section id="who-we-are" className="w-full py-16 px-6 sm:px-8 lg:px-12 relative z-20 scroll-mt-20">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial="hidden"

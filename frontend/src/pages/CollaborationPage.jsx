@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, Layers, Landmark, Network, ShieldCheck, Cpu } from 'lucide-react';
+import { Sparkles, ArrowRight, Landmark, Network, ShieldCheck } from 'lucide-react';
 import AboutSection from '../components/AboutSection';
 
 const CollaborationPage = () => {

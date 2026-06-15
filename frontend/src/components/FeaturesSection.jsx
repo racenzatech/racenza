@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Shield, Zap, HeartHandshake, Compass } from 'lucide-react';
+import { Sparkles, Zap, HeartHandshake, Compass } from 'lucide-react';
 
 const features = [
   {
@@ -31,7 +30,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12">
+    <section id="features" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}

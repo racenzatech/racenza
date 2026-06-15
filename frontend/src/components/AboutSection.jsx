@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sparkles, Milestone, Cpu, Layers } from 'lucide-react';
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12">
+    <section id="about" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12 scroll-mt-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left Side: Elegant Editorial Content */}
@@ -45,12 +45,12 @@ const AboutSection = () => {
             Through this elite partnership, our clients gain access to local USA architects, dedicated account management, and round-the-clock enterprise backing from hundreds of engineers globally. We bring the dream of luxurious, feminine, and futuristic SaaS interfaces to life.
           </p>
 
-          <a 
-            href="#contact" 
+          <Link 
+            to="/#contact" 
             className="btn-luxury-gold px-8 py-3.5 rounded-full text-base font-semibold"
           >
             Learn Collaboration Details
-          </a>
+          </Link>
         </div>
 
         {/* Right Side: High-Fidelity Synergy Timeline Cards */}

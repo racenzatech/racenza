@@ -1,4 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import ServicesDisplay from './ServicesDisplay';
@@ -168,19 +169,19 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="btn-luxury-gold px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 text-center"
             >
               Start Your Project
               <ArrowRight className="w-5 h-5" />
-            </a>
-            <a
-              href="#services"
+            </Link>
+            <Link
+              to="/#services"
               className="btn-glass-luxury px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 text-center"
             >
               Explore Services
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
