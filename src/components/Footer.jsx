@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#1A0F14] text-gray-400 py-16 px-6 sm:px-8 lg:px-12 relative z-20 border-t border-white/10 select-none">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
-        
+
         {/* Top Link Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
-          
+
           {/* Column 1: Brand description */}
           <div className="lg:col-span-4 flex flex-col items-start text-left gap-4">
             <Link to="/" className="flex items-center gap-2 group focus:outline-none">
@@ -25,7 +25,7 @@ const Footer = () => {
                 Racenza
               </span>
             </Link>
-            
+
             <p className="font-inter text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
               Racenza is the premium USA branch of Macenza Global Technology, delivering elite AI-powered IT consulting, custom software, and digital transformation.
             </p>
@@ -60,15 +60,15 @@ const Footer = () => {
             </span>
             <div className="flex items-center gap-2 font-inter text-xs sm:text-sm">
               <Mail className="w-4 h-4 text-racenza-gold" />
-              <span>racenza.tech@gmail.com</span>
+              <span>info@racenza.com</span>
             </div>
             <div className="flex items-center gap-2 font-inter text-xs sm:text-sm">
               <Phone className="w-4 h-4 text-racenza-gold" />
-              <span>+1 (800) 555-0199</span>
+              <span>1-800-815-1554</span>
             </div>
             <div className="flex items-center gap-2 font-inter text-xs sm:text-sm">
               <Compass className="w-4 h-4 text-racenza-gold" />
-              <span>New York, NY, USA</span>
+              <span>167 Madison Ave. Suite 205, <br />New York, NY 10016</span>
             </div>
           </div>
 

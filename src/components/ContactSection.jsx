@@ -105,7 +105,7 @@ const ContactSection = () => {
               </div>
               <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 font-inter">Email us</span>
-                <p className="font-inter text-sm font-semibold text-gray-700">racenza.tech@gmail.com</p>
+                <p className="font-inter text-sm font-semibold text-gray-700">info@racenza.com</p>
               </div>
             </div>
 
@@ -115,7 +115,7 @@ const ContactSection = () => {
               </div>
               <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 font-inter">Call us</span>
-                <p className="font-inter text-sm font-semibold text-gray-700">+1 (800) 555-0199</p>
+                <p className="font-inter text-sm font-semibold text-gray-700">1-800-815-1554</p>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const ContactSection = () => {
               </div>
               <div className="text-left">
                 <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 font-inter">USA HQ</span>
-                <p className="font-inter text-sm font-semibold text-gray-700">New York, NY, USA</p>
+                <p className="font-inter text-sm font-semibold text-gray-700">167 Madison Ave. Suite 205, New York, NY 10016</p>
               </div>
             </div>
           </div>
