@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
-  Sparkles, 
   ArrowRight, 
   Cpu, 
   Globe, 
@@ -38,8 +37,8 @@ const SolutionsPage = () => {
       icon: Database
     },
     {
-      title: "Android App Development",
-      description: "Custom Android applications, business apps, ecommerce apps, enterprise mobility solutions, booking apps, and scalable app ecosystems.",
+      title: "Android/iOS App Development",
+      description: "Custom Android/iOS applications, business apps, ecommerce apps, enterprise mobility solutions, booking apps, and scalable app ecosystems.",
       icon: Smartphone
     },
     {
@@ -75,7 +74,8 @@ const SolutionsPage = () => {
 
   const techStack = [
     "React", "Next.js", "Node.js", "Python", "AI APIs", "Flutter",
-    "Android", "MongoDB", "PostgreSQL", "AWS", "Docker", "Tailwind CSS"
+    "Android", "MongoDB", "PostgreSQL", "MySQL", "AWS", "Docker",
+    "AI / Machine Learning", "Cloud & DevOps", "AI Agents", "Express.js", "And many more"
   ];
 
   return (
@@ -110,9 +110,8 @@ const SolutionsPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+                className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
               >
-                <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
                 <span>Elite Technology Offerings</span>
               </motion.div>
 
@@ -286,7 +285,7 @@ const SolutionsPage = () => {
               Technologies We Work With
             </h2>
 
-            <div className="flex flex-wrap items-center gap-3 w-full">
+             <div className="flex flex-wrap items-center gap-3 w-full">
               {techStack.map((tech, index) => (
                 <motion.div
                   key={tech}
@@ -295,9 +294,10 @@ const SolutionsPage = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.04 }}
                   whileHover={{ scale: 1.05 }}
-                  className="glass-panel px-4 py-2.5 rounded-full border border-white/30 shadow-sm font-inter text-xs sm:text-sm font-semibold text-gray-700 hover:border-racenza-gold hover:text-gray-900 cursor-default"
+                  className="glass-panel px-4 py-2.5 rounded-full border border-white/30 shadow-sm font-inter text-xs sm:text-sm font-semibold text-gray-700 hover:border-racenza-gold hover:text-gray-900 cursor-default flex items-center gap-2"
                 >
-                  ⚙️ {tech}
+                  <div className="w-1.5 h-1.5 rounded-full bg-racenza-gold flex-shrink-0" />
+                  <span>{tech}</span>
                 </motion.div>
               ))}
             </div>

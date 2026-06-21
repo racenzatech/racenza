@@ -1,0 +1,114 @@
+[
+  {
+    "id": "sales-executive",
+    "title": "Sales Executive",
+    "department": "Sales",
+    "location": "New York, NY",
+    "type": "Full-Time",
+    "workplace": "Hybrid",
+    "summary": "Own and close high-value B2B enterprise software and IT delivery contracts with corporate clients.",
+    "description": "We are seeking a consultative, highly driven Sales Executive to lead our outbound client acquisition efforts. You will own the full sales cycle from initial contact to negotiation and deal closure, presenting Racenza's custom software development, AI solutions, and SaaS products to executive decision-makers.",
+    "responsibilities": [
+      "Manage end-to-end sales cycles, converting prospective accounts into long-term technology partnerships.",
+      "Conduct in-depth product presentations and custom system demonstrations for enterprise buyers.",
+      "Negotiate deal scopes, service-level agreements (SLAs), and pricing schedules directly with client leadership.",
+      "Collaborate with internal solutions architects to structure high-quality RFPs and customized software proposals."
+    ],
+    "qualifications": [
+      "3+ years of successful experience in B2B enterprise software, SaaS, or IT consulting sales.",
+      "Proven track record of consistently exceeding individual sales quotas and pipeline metrics.",
+      "Outstanding communication, commercial negotiation, and relationship-management capabilities.",
+      "Expertise in consultative sales methodologies (e.g. Challenger Sales, SPIN, or MEDDPICC)."
+    ],
+    "benefits": [
+      "Competitive base salary with an industry-leading, uncapped commission structure.",
+      "Premium health, dental, and vision insurance coverage.",
+      "Flexible hybrid working options (NYC central office).",
+      "Dedicated professional training stipend and regular company sales events."
+    ]
+  },
+  {
+    "id": "senior-sales-manager",
+    "title": "Senior Sales Manager",
+    "department": "Sales",
+    "location": "New York, NY",
+    "type": "Full-Time",
+    "workplace": "Hybrid",
+    "summary": "Lead, train, and scale our client acquisition division while optimizing revenue forecast performance.",
+    "description": "Racenza is looking for a Senior Sales Manager to lead our growing USA sales division. You will manage our account executives, design outbound sales strategies, set quota metrics, and oversee strategic high-value client acquisitions.",
+    "responsibilities": [
+      "Supervise, mentor, and coach Account Executives and Sales Development Representatives to maximize team output.",
+      "Establish annual sales targets, commission structures, and target pipeline velocity indicators.",
+      "Lead strategic negotiations for high-value enterprise contracts and multi-year IT delivery accounts.",
+      "Generate monthly sales projections, forecast accuracy models, and revenue status reports for executive management."
+    ],
+    "qualifications": [
+      "6+ years of tech industry sales experience, with at least 2 years directly managing B2B sales teams.",
+      "Proven capability to hire, train, and scale high-performing software sales divisions.",
+      "Deep understanding of CRM analytics, territory optimization, and sales enablement workflows.",
+      "Strong leadership presence with superior crisis-management and negotiation skills."
+    ],
+    "benefits": [
+      "Executive compensation package: High base + team override commissions + stock options.",
+      "Full retirement matching program (401k) and premium medical benefits.",
+      "Flexible hybrid office coordination.",
+      "Annual leadership training budget and corporate wellness plans."
+    ]
+  },
+  {
+    "id": "inside-sales-representative",
+    "title": "Inside Sales Representative",
+    "department": "Sales",
+    "location": "Remote (USA)",
+    "type": "Full-Time",
+    "workplace": "Remote",
+    "summary": "Qualify inbound requests and manage CRM lead nurturing to generate opportunities for Account Executives.",
+    "description": "We are seeking a detail-oriented Inside Sales Representative to manage incoming leads. You will respond to website inquiries and qualified product requests, evaluate client budgets and technical requirements, and coordinate initial briefings with our sales directors.",
+    "responsibilities": [
+      "Respond immediately to inbound chat requests, demo applications, and incoming client emails.",
+      "Evaluate prospect suitability using standard qualification frameworks (BANT/GPCT).",
+      "Schedule discovery calls and product briefings for Account Executives to maintain pipeline health.",
+      "Ensure all lead communication logs, customer records, and opportunity histories are precisely documented in HubSpot."
+    ],
+    "qualifications": [
+      "2+ years of successful inside sales, sales development, or lead qualification experience in the tech sector.",
+      "Excellent active listening, telephone etiquette, and written business communication skills.",
+      "Familiarity with CRM systems, email sequencers, and prospecting databases.",
+      "High self-motivation with structural organization and quick follow-up habits."
+    ],
+    "benefits": [
+      "Solid base salary with targeted commission bonuses per qualified meeting completed.",
+      "Comprehensive medical, dental, and paid time off benefits.",
+      "100% remote workspace flexibility.",
+      "Dedicated tech hardware setup budget."
+    ]
+  },
+  {
+    "id": "tele-sales-executive",
+    "title": "Tele Sales Executive",
+    "department": "Sales",
+    "location": "Remote (USA)",
+    "type": "Full-Time",
+    "workplace": "Remote",
+    "summary": "Execute outbound telephone campaigns to prospect target accounts and generate meetings.",
+    "description": "Racenza is looking for a resilient, high-activity Tele Sales Executive to drive cold prospect engagement. You will conduct high-volume outbound phone campaigns to reach decision-makers, deliver clear value-propositions, and book introductory sales meetings.",
+    "responsibilities": [
+      "Maintain a high volume of outbound cold calls daily to target enterprise companies and decision-makers.",
+      "Deliver concise value-proposition scripts tailored to business automation and custom IT development.",
+      "Navigate gatekeepers and handle objections effectively to secure scheduled presentation dates.",
+      "Log all call details, contact updates, and scheduled appointments in the CRM database."
+    ],
+    "qualifications": [
+      "1-2 years of outbound calling, telesales, or lead generation experience.",
+      "High resilience, energy, and enthusiasm when communicating with prospects over the phone.",
+      "Strong objection-handling capabilities and verbal communication clarity.",
+      "Comfort working independently from a remote environment to achieve daily dial targets."
+    ],
+    "benefits": [
+      "Competitive base salary + bonuses based on meetings booked.",
+      "Comprehensive telesales training and scripting support.",
+      "Remote work flex options.",
+      "Clear career paths into Inside Sales and Account Executive roles."
+    ]
+  }
+]

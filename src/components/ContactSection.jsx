@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, MapPin, Sparkles, CheckCircle2, Send, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle2, Send, Loader2 } from 'lucide-react';
 
 const ContactSection = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -82,8 +82,7 @@ const ContactSection = () => {
         {/* Left Side: Contact details & Corporate Information */}
         <div className="lg:col-span-5 flex flex-col justify-between items-start text-left bg-white/10 border border-white/20 p-8 sm:p-10 rounded-3xl backdrop-blur-md shadow-sm">
           <div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-5 w-fit">
-              <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
+            <div className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-5 w-fit">
               <span>Book Consultation</span>
             </div>
 

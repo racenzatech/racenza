@@ -18,9 +18,7 @@ const Footer = () => {
           {/* Column 1: Brand description */}
           <div className="lg:col-span-4 flex flex-col items-start text-left gap-4">
             <Link to="/" className="flex items-center gap-2 group focus:outline-none">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-racenza-pink-medium to-white/10 flex items-center justify-center border border-white/20">
-                <span className="text-sm">🌸</span>
-              </div>
+              <img src="/favicon.png" alt="Racenza Logo" className="w-8 h-8 rounded-full object-cover" />
               <span className="font-playfair font-bold text-xl tracking-wide text-white group-hover:text-racenza-gold transition-colors duration-300">
                 Racenza
               </span>
@@ -39,6 +37,7 @@ const Footer = () => {
             <Link to="/" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Home</Link>
             <Link to="/#about" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">About Synergy</Link>
             <Link to="/#features" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Why Choose Us</Link>
+            <Link to="/careers" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Careers</Link>
             <Link to="/#contact" className="font-inter text-xs sm:text-sm hover:text-white transition-colors duration-300">Book Briefing</Link>
           </div>
 

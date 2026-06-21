@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Zap, HeartHandshake, Compass } from 'lucide-react';
+import { Cpu, Zap, HeartHandshake, Compass } from 'lucide-react';
 
 const features = [
   {
     title: "AI-First Infrastructure",
     description: "Integrating custom models, advanced analytics, and automated RAG systems designed for rapid scaling.",
-    icon: Sparkles,
+    icon: Cpu,
     color: "rgba(212, 175, 55, 0.2)"
   },
   {

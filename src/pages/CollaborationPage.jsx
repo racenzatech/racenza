@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, Landmark, Network, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Landmark, Network, ShieldCheck } from 'lucide-react';
 import AboutSection from '../components/AboutSection';
 
 const CollaborationPage = () => {
@@ -56,9 +56,8 @@ const CollaborationPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+                className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
               >
-                <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
                 <span>Global Powerhouse</span>
               </motion.div>
 

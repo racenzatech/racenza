@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ServicesDisplay from './ServicesDisplay';
 
 const HeroSection = () => {
@@ -71,9 +71,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/25 border border-white/40 backdrop-blur-md text-gray-700 text-xs font-semibold tracking-[0.2em] uppercase mb-4 shadow-sm"
+            className="flex items-center px-4 py-1.5 rounded-full bg-white/25 border border-white/40 backdrop-blur-md text-gray-700 text-xs font-semibold tracking-[0.2em] uppercase mb-4 shadow-sm"
           >
-            <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
             <span>Macenza Partnership</span>
           </motion.div>
 
@@ -131,9 +130,8 @@ const HeroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+            className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
           >
-            <Sparkles className="w-3.5 h-3.5 text-racenza-gold animate-pulse" />
             <span>USA Branch of Macenza</span>
           </motion.div>
 
@@ -145,8 +143,8 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-playfair font-bold text-gray-900 mb-6 tracking-tight leading-[1.08]"
           >
-            AI-Powered <br className="sm:hidden" />
-            <span className="text-gold-gradient font-playfair italic">Digital Excellence</span> <br />
+            AI-Powered <span className="text-gold-gradient font-playfair italic">Digital</span> <br />
+            <span className="text-gold-gradient font-playfair italic">Excellence</span> <br />
             for Modern Businesses
           </motion.h2>
 

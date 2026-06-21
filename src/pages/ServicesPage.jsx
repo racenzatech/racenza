@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ServicesDisplay from '../components/ServicesDisplay';
 import FeaturesSection from '../components/FeaturesSection';
 const ServicesPage = () => {
@@ -39,9 +39,8 @@ const ServicesPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+                className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
               >
-                <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
                 <span>Elite SaaS Capabilities</span>
               </motion.div>
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, Milestone, Cpu, Layers } from 'lucide-react';
+import { Milestone, Cpu, Layers } from 'lucide-react';
 
 const AboutSection = () => {
   const points = [
@@ -27,8 +27,7 @@ const AboutSection = () => {
         
         {/* Left Side: Elegant Editorial Content */}
         <div className="lg:col-span-6 text-left flex flex-col items-start">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-5">
-            <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
+          <div className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-5">
             <span>Corporate Partnership</span>
           </div>
           
