@@ -11,6 +11,8 @@ import ServicesPage from './pages/ServicesPage';
 import CollaborationPage from './pages/CollaborationPage';
 import ContactPage from './pages/ContactPage';
 import SolutionsPage from './pages/SolutionsPage';
+import CareersPage from './pages/CareersPage';
+import JobDetailsPage from './pages/JobDetailsPage';
 import ScrollToHashElement from './components/ScrollToHashElement';
 
 // Homepage Component assembling all scrollable sections in standard scroll sequence
@@ -51,6 +53,8 @@ function App() {
           <Route path="/collaboration" element={<CollaborationPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/careers/:jobId" element={<JobDetailsPage />} />
         </Routes>
 
         {/* Sleek dark-themed corporate Footer (Visible across all routes) */}

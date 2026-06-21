@@ -6,7 +6,7 @@
   --color-racenza-pink-medium: #E8B4C8;
   --color-racenza-pink-deep: #D19BB0;
   --color-racenza-pink-bg: #FFF0F5;
-  
+
   --color-racenza-gold: #D4AF37;
   --color-racenza-gold-light: #F3E5AB;
   --color-racenza-gold-dark: #AA8811;
@@ -25,20 +25,51 @@
   --animate-shimmer: shimmer 2.5s infinite linear;
 
   @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(2deg); }
+
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-10px) rotate(2deg);
+    }
   }
+
   @keyframes pulseSubtle {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.85; transform: scale(1.015); }
+
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 0.85;
+      transform: scale(1.015);
+    }
   }
+
   @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(25px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+
   @keyframes shimmer {
-    0% { backgroundPosition: -200% 0; }
-    100% { backgroundPosition: 200% 0; }
+    0% {
+      backgroundPosition: -200% 0;
+    }
+
+    100% {
+      backgroundPosition: 200% 0;
+    }
   }
 }
 
@@ -59,7 +90,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-playfair);
 }
 
@@ -67,14 +103,17 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #FFF0F5;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #E8B4C8;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #D4AF37;
 }
@@ -91,11 +130,12 @@ h1, h2, h3, h4, h5, h6 {
 .glass-panel-hover {
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .glass-panel-hover:hover {
   background: rgba(255, 255, 255, 0.20);
   border-color: rgba(248, 215, 232, 0.5);
   box-shadow: 0 12px 40px 0 rgba(248, 215, 232, 0.25),
-              inset 0 0 12px rgba(255, 255, 255, 0.2);
+    inset 0 0 12px rgba(255, 255, 255, 0.2);
   transform: translateY(-4px);
 }
 
@@ -103,6 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-luxury-gold {
   position: relative;
   background: linear-gradient(135deg, #AA8811 0%, #D4AF37 50%, #F3E5AB 100%);
+  background-clip: padding-box;
   color: #ffffff;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
@@ -110,6 +151,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
+  border-radius: 40px !important;
+  isolation: isolate;
+  transform: translateZ(0);
   cursor: pointer;
 }
 
@@ -117,26 +161,28 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -150%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
+  border-radius: inherit;
   transition: all 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .btn-luxury-gold:hover::before {
-  left: 100%;
+  left: 150%;
+  opacity: 1;
 }
 
 .btn-luxury-gold:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6),
-              0 0 15px rgba(248, 215, 232, 0.4);
+    0 0 15px rgba(248, 215, 232, 0.4);
 }
 
 /* Secondary Premium Glass Button */
@@ -146,7 +192,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  color: #374151; /* gray-700 */
+  color: #374151;
+  /* gray-700 */
+  border-radius: 40px !important;
   cursor: pointer;
 }
 
@@ -155,16 +203,22 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(248, 215, 232, 0.6);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(248, 215, 232, 0.25);
-  color: #1f2937; /* gray-800 */
+  color: #1f2937;
+  /* gray-800 */
 }
 
 /* Dynamic Gold Gradient Text */
 .text-gold-gradient {
+  display: inline-block;
   background: linear-gradient(135deg, #AA8811 0%, #D4AF37 40%, #AA8811 80%, #D4AF37 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 6s linear infinite;
+  padding-right: 0.35em !important;
+  margin-right: -0.35em !important;
+  padding-bottom: 0.15em !important;
+  margin-bottom: -0.15em !important;
 }
 
 @keyframes shine {

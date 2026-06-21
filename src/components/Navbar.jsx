@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: "Services", href: "/services" },
     { name: "Solutions", href: "/solutions" },
     { name: "Macenza Collaboration", href: "/collaboration" },
+    { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" }
   ];
 
@@ -47,8 +48,8 @@ const Navbar = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <Link to="/" className="flex items-center gap-2">
-            <div className="relative w-10 h-10 rounded-full bg-gradient-to-tr from-racenza-pink-medium to-white/5 flex items-center justify-center border border-white/30 shadow-premium-glow group-hover:scale-105 transition-transform duration-300">
-              <span className="text-xl">🌸</span>
+            <div className="relative w-10 h-10 rounded-full bg-gradient-to-tr from-racenza-pink-medium to-white/5 flex items-center justify-center border border-white/30 shadow-premium-glow group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+              <img src="/favicon.png" alt="Racenza Logo" className="w-8 h-8 rounded-full object-cover" />
             </div>
             <span className="font-playfair font-bold text-2xl tracking-wide text-gray-800 group-hover:text-racenza-gold transition-colors duration-300 relative">
               Racenza

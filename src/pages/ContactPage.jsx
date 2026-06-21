@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import ContactSection from '../components/ContactSection';
 
 const ContactPage = () => {
@@ -37,9 +37,8 @@ const ContactPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+                className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
               >
-                <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
                 <span>Direct Strategic Connection</span>
               </motion.div>
 

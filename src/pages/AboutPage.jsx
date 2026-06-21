@@ -1,19 +1,92 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, CheckCircle2, Cpu, Eye, Award } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Cpu, Eye, Award, Globe, Smartphone, Cloud, Zap, Brain, ChevronRight, Target } from 'lucide-react';
 
 const AboutPage = () => {
   const servicesList = [
-    "Artificial Intelligence Solutions",
-    "Website Development",
-    "Web Application Development",
-    "Android App Development",
-    "HRMS Development",
-    "SaaS Product Development",
-    "Custom Software Development",
-    "Business Automation",
-    "UI/UX Design",
-    "Enterprise IT Services"
+    {
+      title: "Software Development",
+      icon: Cpu,
+      description: "Custom enterprise-grade software and SaaS platforms designed to automate operations and drive scalability.",
+      color: "rgba(212, 175, 55, 0.15)",
+      items: [
+        "Custom SaaS Platforms",
+        "Enterprise Software",
+        "CRM Development",
+        "ERP Systems",
+        "Business Dashboards",
+        "Admin Panels"
+      ]
+    },
+    {
+      title: "Web Solutions",
+      icon: Globe,
+      description: "High-performance corporate websites and feature-rich portals with premium, engaging interfaces.",
+      color: "rgba(232, 180, 200, 0.2)",
+      items: [
+        "Corporate Websites",
+        "Landing Pages",
+        "Web Applications",
+        "E-commerce Stores",
+        "Progressive Web Apps",
+        "Customer Portals"
+      ]
+    },
+    {
+      title: "Mobile Applications",
+      icon: Smartphone,
+      description: "Native and cross-platform mobile apps offering flawless, immersive interactive user experiences.",
+      color: "rgba(212, 175, 55, 0.15)",
+      items: [
+        "iOS Apps",
+        "Android Apps",
+        "Cross-platform Apps",
+        "Startup MVP Apps",
+        "On-demand Apps"
+      ]
+    },
+    {
+      title: "Automation Solutions",
+      icon: Zap,
+      description: "Intelligent workflow automation and integration systems that eliminate repetitive operational tasks.",
+      color: "rgba(232, 180, 200, 0.2)",
+      items: [
+        "Workflow Automation",
+        "Business Process Automation",
+        "CRM Automation",
+        "AI Automation",
+        "Email Automation",
+        "RPA Solutions"
+      ]
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: Cloud,
+      description: "Secure cloud deployments, server management, and automated CI/CD pipelines built to scale.",
+      color: "rgba(212, 175, 55, 0.15)",
+      items: [
+        "AWS Deployment",
+        "Azure Cloud",
+        "CI/CD Pipelines",
+        "Cloud Migration",
+        "Scalable Infrastructure",
+        "Server Management"
+      ]
+    },
+    {
+      title: "AI Agents Built by Macenza",
+      icon: Brain,
+      description: "Our custom-trained autonomous agents handle everything from high-volume sales outreach to real-time customer support.",
+      color: "rgba(232, 180, 200, 0.25)",
+      items: [
+        "Sales AI Agent",
+        "Customer Support AI",
+        "Voice AI Assistant",
+        "Recruitment AI Agent",
+        "Lead Generation AI",
+        "Business Intelligence AI"
+      ]
+    }
   ];
 
   const chooseUsPoints = [
@@ -77,9 +150,8 @@ const AboutPage = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeUp}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
+                className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-6"
               >
-                <Sparkles className="w-3.5 h-3.5 text-racenza-gold" />
                 <span>Corporate Background</span>
               </motion.div>
 
@@ -167,7 +239,7 @@ const AboutPage = () => {
             className="glass-panel p-8 rounded-3xl border border-white/30 backdrop-blur-md text-left flex flex-col justify-start items-start hover:border-racenza-pink-medium/50 hover:bg-white/20 transition-all duration-300 shadow-sm"
           >
             <div className="w-10 h-10 rounded-xl bg-white/35 border border-white/45 flex items-center justify-center mb-6 shadow-sm">
-              <Cpu className="w-5 h-5 text-racenza-gold" />
+              <Target className="w-5 h-5 text-racenza-gold" />
             </div>
             <h3 className="font-playfair text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
             <p className="font-inter text-sm sm:text-base text-gray-600 leading-relaxed">
@@ -195,9 +267,9 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* 4. WHAT WE DELIVER (Services Highlight Tags) */}
+      {/* 4. WHAT WE DELIVER (Services Grid Cards) */}
       <section className="w-full py-16 px-6 sm:px-8 lg:px-12 relative z-20">
-        <div className="max-w-5xl mx-auto text-center flex flex-col items-center">
+        <div className="max-w-6xl mx-auto text-center flex flex-col items-center">
           
           <span className="font-playfair text-sm text-racenza-gold font-semibold tracking-widest uppercase italic mb-2">
             IT Offerings
@@ -207,21 +279,70 @@ const AboutPage = () => {
             What We Deliver
           </h2>
 
-          {/* Staggered Tag Cloud */}
-          <div className="flex flex-wrap items-center justify-center gap-3 max-w-4xl">
-            {servicesList.map((service, index) => (
-              <motion.div
-                key={service}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                whileHover={{ scale: 1.05 }}
-                className="glass-panel px-5 py-3 rounded-full border border-white/30 shadow-sm font-inter text-sm sm:text-base font-semibold text-gray-700 hover:border-racenza-gold hover:text-gray-900 cursor-default"
-              >
-                🌸 {service}
-              </motion.div>
-            ))}
+          {/* 3-in-a-row Luxury Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-6 items-start">
+            {servicesList.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <motion.div
+                  key={service.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  whileHover={{ y: -8, scale: 1.02, transition: { type: "spring", stiffness: 400, damping: 25 } }}
+                  className="glass-panel p-8 rounded-[2rem] border border-white/20 text-left flex flex-col justify-between items-start hover:border-racenza-gold/50 transition-[border-color,background-color,box-shadow] duration-200 shadow-sm relative group overflow-hidden min-h-[440px]"
+                >
+                  {/* Radial Glow on Hover */}
+                  <div 
+                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
+                    style={{
+                      background: `radial-gradient(circle at 50% 0%, ${service.color}, transparent 70%)`
+                    }}
+                  />
+
+                  {/* Top gold line accent on hover */}
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-racenza-gold/0 to-transparent group-hover:via-racenza-gold/60 transition-all duration-200" />
+                  
+                  <div className="w-full z-10 flex flex-col h-full justify-between">
+                    <div>
+                      {/* Icon Badge */}
+                      <div className="w-12 h-12 rounded-2xl bg-white/30 border border-white/50 flex items-center justify-center mb-6 shadow-sm group-hover:bg-white/55 group-hover:border-racenza-gold/40 group-hover:scale-105 transition-all duration-200">
+                        <Icon className="w-6 h-6 text-gray-700 group-hover:text-racenza-gold transition-colors duration-200" />
+                      </div>
+
+                      {/* Title */}
+                      <h3 className="font-playfair text-xl sm:text-2xl font-bold text-gray-900 mb-3 tracking-tight group-hover:text-racenza-gold-dark transition-colors duration-200">
+                        {service.title}
+                      </h3>
+
+                      {/* Description */}
+                      <p className="font-inter text-sm text-gray-500 leading-relaxed max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out group-hover:max-h-28 group-hover:opacity-100 group-hover:mb-6">
+                        {service.description}
+                      </p>
+                    </div>
+
+                    <div>
+                      {/* Divider */}
+                      <div className="w-full h-[1px] bg-black/5 mb-6 group-hover:bg-racenza-gold/20 transition-colors duration-200" />
+
+                      {/* Deliverables List */}
+                      <ul className="space-y-3.5 w-full">
+                        {service.items.map((item, itemIdx) => (
+                          <li 
+                            key={itemIdx} 
+                            className="flex items-start gap-3 font-inter text-sm sm:text-base text-gray-600 hover:text-gray-900 transition-colors duration-150 group/item"
+                          >
+                            <ChevronRight className="w-4 h-4 text-racenza-gold mt-0.5 flex-shrink-0 transition-transform duration-200 group-hover/item:translate-x-1" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
 
         </div>

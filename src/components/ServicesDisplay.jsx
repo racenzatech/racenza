@@ -16,7 +16,7 @@ const services = [
   { name: "Artificial Intelligence Solutions", icon: BrainCircuit, color: "rgba(212, 175, 55, 0.25)" },
   { name: "Website Development", icon: Globe, color: "rgba(248, 215, 232, 0.25)" },
   { name: "Web Application Development", icon: Terminal, color: "rgba(248, 215, 232, 0.25)" },
-  { name: "Android App Development", icon: Smartphone, color: "rgba(248, 215, 232, 0.25)" },
+  { name: "Android/iOS App Development", icon: Smartphone, color: "rgba(248, 215, 232, 0.25)" },
   { name: "HRMS Development", icon: UsersRound, color: "rgba(248, 215, 232, 0.25)" },
   { name: "SaaS Product Development", icon: Layers, color: "rgba(212, 175, 55, 0.25)" },
   { name: "Custom Software Development", icon: Cpu, color: "rgba(248, 215, 232, 0.25)" },
