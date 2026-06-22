@@ -37,7 +37,7 @@ const Home = () => {
 function App() {
   return (
     <Router>
-      <div className="relative w-full min-h-screen overflow-x-hidden bg-gradient-to-br from-[#FCE4EC] via-[#F8D7E8] to-[#FFF0F5] select-none">
+      <div className="relative w-full min-h-screen overflow-x-hidden bg-gradient-to-br from-[#FCE4EC] via-[#F8D7E8] to-[#FFF0F5]">
         
         {/* Global Page Transition & Hash Section Scroller */}
         <ScrollToHashElement />

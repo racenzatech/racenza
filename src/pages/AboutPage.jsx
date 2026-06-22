@@ -74,7 +74,7 @@ const AboutPage = () => {
       ]
     },
     {
-      title: "AI Agents Built by Macenza",
+      title: "AI Agents",
       icon: Brain,
       description: "Our custom-trained autonomous agents handle everything from high-volume sales outreach to real-time customer support.",
       color: "rgba(232, 180, 200, 0.25)",
@@ -96,7 +96,7 @@ const AboutPage = () => {
     },
     {
       title: "Powered by Macenza Innovation",
-      description: "Backed by the software development powerhouse Macenza Global Technology with massive engineering bandwidth."
+      description: "Backed by the software development powerhouse Macenza with massive engineering bandwidth."
     },
     {
       title: "AI-First Development Approach",
@@ -123,10 +123,10 @@ const AboutPage = () => {
 
   return (
     <div className="w-full flex flex-col justify-start overflow-x-hidden bg-transparent pt-24">
-      
+
       {/* 1. HERO SECTION */}
       <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        
+
         {/* Full Hero Image Background */}
         <img
           src="/Video/Image.png"
@@ -144,7 +144,7 @@ const AboutPage = () => {
           >
             {/* Top gold line accent */}
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-racenza-gold/60 to-transparent" />
-            
+
             <div className="flex flex-col items-center">
               <motion.div
                 initial="hidden"
@@ -213,12 +213,12 @@ const AboutPage = () => {
           >
             {/* Top gold line accent */}
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-racenza-gold/60 to-transparent" />
-            
+
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-gray-900 mb-6 tracking-tight flex items-center gap-3">
               <Award className="w-8 h-8 text-racenza-gold" />
               Who We Are
             </h2>
-            
+
             <p className="font-inter text-base sm:text-lg text-gray-700 leading-relaxed first-letter:text-5xl first-letter:font-playfair first-letter:font-bold first-letter:text-racenza-gold first-letter:mr-3 first-letter:float-left">
               Racenza is the USA-based collaboration of Macenza, created to deliver premium IT services and cutting-edge digital solutions to businesses across the United States. We specialize in artificial intelligence, software development, enterprise automation, web applications, mobile applications, HRMS solutions, SaaS product development, cloud technologies, and complete IT transformation services. Backed by Macenza’s innovation and technical expertise, Racenza helps businesses scale with smart, modern, and reliable technology solutions.
             </p>
@@ -229,7 +229,7 @@ const AboutPage = () => {
       {/* 3. MISSION & VISION SECTION (Side-by-Side) */}
       <section className="w-full py-12 px-6 sm:px-8 lg:px-12 relative z-20">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          
+
           {/* Mission Card */}
           <motion.div
             initial="hidden"
@@ -270,7 +270,7 @@ const AboutPage = () => {
       {/* 4. WHAT WE DELIVER (Services Grid Cards) */}
       <section className="w-full py-16 px-6 sm:px-8 lg:px-12 relative z-20">
         <div className="max-w-6xl mx-auto text-center flex flex-col items-center">
-          
+
           <span className="font-playfair text-sm text-racenza-gold font-semibold tracking-widest uppercase italic mb-2">
             IT Offerings
           </span>
@@ -294,7 +294,7 @@ const AboutPage = () => {
                   className="glass-panel p-8 rounded-[2rem] border border-white/20 text-left flex flex-col justify-between items-start hover:border-racenza-gold/50 transition-[border-color,background-color,box-shadow] duration-200 shadow-sm relative group overflow-hidden min-h-[440px]"
                 >
                   {/* Radial Glow on Hover */}
-                  <div 
+                  <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none"
                     style={{
                       background: `radial-gradient(circle at 50% 0%, ${service.color}, transparent 70%)`
@@ -303,7 +303,7 @@ const AboutPage = () => {
 
                   {/* Top gold line accent on hover */}
                   <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-racenza-gold/0 to-transparent group-hover:via-racenza-gold/60 transition-all duration-200" />
-                  
+
                   <div className="w-full z-10 flex flex-col h-full justify-between">
                     <div>
                       {/* Icon Badge */}
@@ -329,8 +329,8 @@ const AboutPage = () => {
                       {/* Deliverables List */}
                       <ul className="space-y-3.5 w-full">
                         {service.items.map((item, itemIdx) => (
-                          <li 
-                            key={itemIdx} 
+                          <li
+                            key={itemIdx}
                             className="flex items-start gap-3 font-inter text-sm sm:text-base text-gray-600 hover:text-gray-900 transition-colors duration-150 group/item"
                           >
                             <ChevronRight className="w-4 h-4 text-racenza-gold mt-0.5 flex-shrink-0 transition-transform duration-200 group-hover/item:translate-x-1" />
@@ -351,7 +351,7 @@ const AboutPage = () => {
       {/* 5. WHY CHOOSE SECTION */}
       <section className="w-full py-16 px-6 sm:px-8 lg:px-12 relative z-20">
         <div className="max-w-5xl mx-auto">
-          
+
           {/* Section tag */}
           <div className="mb-12 text-center flex flex-col items-center">
             <span className="font-playfair text-sm text-racenza-gold font-semibold tracking-widest uppercase italic mb-2">
@@ -403,11 +403,11 @@ const AboutPage = () => {
             className="glass-panel p-8 sm:p-12 rounded-3xl border border-white/30 backdrop-blur-lg shadow-glass-glow flex flex-col items-center text-center relative overflow-hidden"
           >
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-racenza-gold/60 to-transparent" />
-            
+
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-gray-900 mb-4 tracking-tight leading-snug">
               Let’s Build Something Exceptional
             </h2>
-            
+
             <p className="font-inter text-sm sm:text-base text-gray-600 max-w-xl mb-8 leading-relaxed">
               Partner with Racenza to transform your business with innovative digital solutions and high-end software development.
             </p>
