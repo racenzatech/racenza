@@ -5,52 +5,180 @@ import { ArrowRight } from 'lucide-react';
 import ServicesDisplay from './ServicesDisplay';
 
 const HeroSection = () => {
-  const videoRef = useRef(null);
+  const videoRefA = useRef(null);
+  const videoRefB = useRef(null);
+  const [activeVideo, setActiveVideo] = useState('A');
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [videoLoadedA, setVideoLoadedA] = useState(false);
+  const [videoLoadedB, setVideoLoadedB] = useState(false);
   const [videoError, setVideoError] = useState(false);
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  const transitionTriggered = useRef(false);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {
+    if (videoRefA.current) {
+      videoRefA.current.play().catch(() => {
         console.log("Autoplay prevented or video missing, gracefully showing fallback.");
         setVideoError(true);
       });
     }
   }, []);
 
-  const handleVideoEnded = () => {
-    if (videoRef.current) {
-      videoRef.current.pause();
-      // Lock on the final frame
-      videoRef.current.currentTime = videoRef.current.duration - 0.1;
+  const handleTimeUpdateA = () => {
+    if (activeVideo !== 'A' || transitionTriggered.current) return;
+    const videoA = videoRefA.current;
+    const videoB = videoRefB.current;
+    if (videoA && videoB && videoA.duration) {
+      // Trigger crossfade 0.8 seconds before the end
+      if (videoA.currentTime >= videoA.duration - 0.8) {
+        transitionTriggered.current = true;
+        videoB.currentTime = 2.9;
+        videoB.play()
+          .then(() => {
+            setActiveVideo('B');
+            setIsTransitioning(true);
+            setTimeout(() => {
+              videoA.pause();
+              setIsTransitioning(false);
+              transitionTriggered.current = false;
+            }, 1000); // match transition duration
+          })
+          .catch((err) => {
+            console.error("Failed to transition to Video B:", err);
+            transitionTriggered.current = false;
+          });
+      }
     }
+  };
+
+  const handleTimeUpdateB = () => {
+    if (activeVideo !== 'B' || transitionTriggered.current) return;
+    const videoA = videoRefA.current;
+    const videoB = videoRefB.current;
+    if (videoA && videoB && videoB.duration) {
+      // Trigger crossfade 0.8 seconds before the end
+      if (videoB.currentTime >= videoB.duration - 0.8) {
+        transitionTriggered.current = true;
+        videoA.currentTime = 2.9;
+        videoA.play()
+          .then(() => {
+            setActiveVideo('A');
+            setIsTransitioning(true);
+            setTimeout(() => {
+              videoB.pause();
+              setIsTransitioning(false);
+              transitionTriggered.current = false;
+            }, 1000); // match transition duration
+          })
+          .catch((err) => {
+            console.error("Failed to transition to Video A:", err);
+            transitionTriggered.current = false;
+          });
+      }
+    }
+  };
+
+  const handleEndedA = () => {
+    if (activeVideo === 'A') {
+      const videoA = videoRefA.current;
+      const videoB = videoRefB.current;
+      if (videoA && videoB) {
+        videoB.currentTime = 2.9;
+        videoB.play().then(() => {
+          setActiveVideo('B');
+          setIsTransitioning(true);
+          setTimeout(() => {
+            videoA.pause();
+            setIsTransitioning(false);
+            transitionTriggered.current = false;
+          }, 1000);
+        }).catch(err => console.error(err));
+      }
+    }
+  };
+
+  const handleEndedB = () => {
+    if (activeVideo === 'B') {
+      const videoA = videoRefA.current;
+      const videoB = videoRefB.current;
+      if (videoA && videoB) {
+        videoA.currentTime = 2.9;
+        videoA.play().then(() => {
+          setActiveVideo('A');
+          setIsTransitioning(true);
+          setTimeout(() => {
+            videoB.pause();
+            setIsTransitioning(false);
+            transitionTriggered.current = false;
+          }, 1000);
+        }).catch(err => console.error(err));
+      }
+    }
+  };
+
+  const getVideoClassA = () => {
+    let zClass = 'z-0';
+    let opacityClass = 'opacity-0 pointer-events-none';
+    if (activeVideo === 'A') {
+      zClass = isTransitioning ? 'z-20' : 'z-10';
+      opacityClass = videoLoadedA ? 'opacity-100' : 'opacity-0';
+    } else {
+      zClass = isTransitioning ? 'z-10' : 'z-0';
+      opacityClass = isTransitioning && videoLoadedA ? 'opacity-100' : 'opacity-0 pointer-events-none';
+    }
+    return `w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 ${zClass} ${opacityClass}`;
+  };
+
+  const getVideoClassB = () => {
+    let zClass = 'z-0';
+    let opacityClass = 'opacity-0 pointer-events-none';
+    if (activeVideo === 'B') {
+      zClass = isTransitioning ? 'z-20' : 'z-10';
+      opacityClass = videoLoadedB ? 'opacity-100' : 'opacity-0';
+    } else {
+      zClass = isTransitioning ? 'z-10' : 'z-0';
+      opacityClass = isTransitioning && videoLoadedB ? 'opacity-100' : 'opacity-0 pointer-events-none';
+    }
+    return `w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 ${zClass} ${opacityClass}`;
   };
 
   return (
     <div className="w-full flex flex-col justify-start overflow-x-hidden bg-transparent">
-      
+
       {/* FOLD 1: Full-Screen Cover Video Backdrop & Centered Brand Text */}
       <div className="w-full h-screen flex items-center justify-center overflow-hidden relative bg-[#FFF0F5]">
-        
+
         {/* Soft elegant ambient glows */}
         <div className="bg-ambient-light-1 top-[-10%] left-[-10%] z-0" />
         <div className="bg-ambient-light-2 bottom-[-10%] right-[-10%] z-0" />
 
         {!videoError ? (
-          <video
-            ref={videoRef}
-            src="/Video/Hero_video.mp4"
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            onEnded={handleVideoEnded}
-            onCanPlay={() => setVideoLoaded(true)}
-            onError={() => setVideoError(true)}
-            className={`w-full h-full object-cover absolute inset-0 z-0 transition-opacity duration-1000 ${
-              videoLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-          />
+          <>
+            <video
+              ref={videoRefA}
+              src="/Video/Hero_video.mp4"
+              autoPlay
+              muted
+              playsInline
+              preload="auto"
+              onTimeUpdate={handleTimeUpdateA}
+              onEnded={handleEndedA}
+              onCanPlay={() => setVideoLoadedA(true)}
+              onError={() => setVideoError(true)}
+              className={getVideoClassA()}
+            />
+            <video
+              ref={videoRefB}
+              src="/Video/Hero_video.mp4"
+              muted
+              playsInline
+              preload="auto"
+              onTimeUpdate={handleTimeUpdateB}
+              onEnded={handleEndedB}
+              onCanPlay={() => setVideoLoadedB(true)}
+              onError={() => setVideoError(true)}
+              className={getVideoClassB()}
+            />
+          </>
         ) : (
           /* High-Fidelity Fallback Gradient Decor */
           <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-[#FCE4EC] via-[#F8D7E8] to-[#FFF0F5] z-0">
@@ -66,7 +194,7 @@ const HeroSection = () => {
         )}
 
         {/* Absolute Centered Logo overlaying the video (Fluid typography scaling) */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
+        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center px-6 pointer-events-none">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,7 +213,7 @@ const HeroSection = () => {
             <span className="text-gold-gradient font-playfair italic">Racenza</span>
           </motion.h1>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: 1, width: 96 }}
             transition={{ duration: 1.2, delay: 0.5 }}
@@ -123,7 +251,7 @@ const HeroSection = () => {
       {/* 2. FOLD 2: Spacious Copywriting Intro Block */}
       <div className="w-full flex flex-col items-center text-center justify-center py-20 sm:py-24 lg:py-28 px-6 sm:px-8 lg:px-12 bg-[#FFF0F5]/85 border-t border-white/20 backdrop-blur-md relative z-20">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          
+
           {/* Tagline pill */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
