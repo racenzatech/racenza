@@ -65,7 +65,7 @@ const SolutionsPage = () => {
 
   const whyChooseUsPoints = [
     "USA-focused service delivery",
-    "Powered by Macenza technology expertise",
+    "Powered by Macenza expertise",
     "AI-first innovation",
     "Premium enterprise quality",
     "Scalable secure architecture",

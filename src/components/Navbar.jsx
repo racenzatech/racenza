@@ -154,7 +154,7 @@ const Navbar = () => {
             
             {/* Soft branding in mobile view */}
             <div className="py-8 text-center text-xs tracking-wider text-gray-400 font-inter border-t border-gray-100 w-full">
-              Powered by MACENZA Global Technology
+              Powered by MACENZA
             </div>
           </motion.div>
         )}

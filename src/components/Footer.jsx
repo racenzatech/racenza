@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[#1A0F14] text-gray-400 py-16 px-6 sm:px-8 lg:px-12 relative z-20 border-t border-white/10 select-none">
+    <footer className="w-full bg-[#1A0F14] text-gray-400 py-16 px-6 sm:px-8 lg:px-12 relative z-20 border-t border-white/10">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
 
         {/* Top Link Grid */}
@@ -25,7 +25,7 @@ const Footer = () => {
             </Link>
 
             <p className="font-inter text-xs sm:text-sm text-gray-500 leading-relaxed max-w-sm">
-              Racenza is the premium USA branch of Macenza Global Technology, delivering elite AI-powered IT consulting, custom software, and digital transformation.
+              Racenza is the premium USA branch of Macenza, delivering elite AI-powered IT consulting, custom software, and digital transformation.
             </p>
           </div>
 

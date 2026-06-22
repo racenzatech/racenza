@@ -56,7 +56,7 @@ const FeaturesSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.12 }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                className="glass-panel p-6 sm:p-8 rounded-3xl text-left hover:border-racenza-pink-medium/50 hover:bg-white/20 transition-all duration-300 relative group overflow-hidden select-none shadow-sm"
+                className="glass-panel p-6 sm:p-8 rounded-3xl text-left hover:border-racenza-pink-medium/50 hover:bg-white/20 transition-all duration-300 relative group overflow-hidden shadow-sm"
               >
                 {/* Custom gradient backplate on hover */}
                 <div 

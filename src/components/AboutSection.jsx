@@ -11,7 +11,7 @@ const AboutSection = () => {
     },
     {
       title: "Macenza Global Core",
-      description: "Backed by the global software engineering capabilities of Macenza Technology, enabling massive enterprise scale.",
+      description: "Backed by the global software engineering capabilities of Macenza, enabling massive enterprise scale.",
       icon: Layers
     },
     {
@@ -24,28 +24,28 @@ const AboutSection = () => {
   return (
     <section id="about" className="w-full py-20 sm:py-24 bg-[#FFF0F5]/85 relative z-20 px-6 sm:px-8 lg:px-12 scroll-mt-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Left Side: Elegant Editorial Content */}
         <div className="lg:col-span-6 text-left flex flex-col items-start">
           <div className="flex items-center px-4 py-1.5 rounded-full bg-white/30 border border-white/40 shadow-sm text-gray-800 text-xs font-semibold tracking-wider uppercase mb-5">
             <span>Corporate Partnership</span>
           </div>
-          
+
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-gray-900 mb-6 tracking-tight">
             The Synergy: <br />
             <span className="text-gold-gradient font-playfair italic">Racenza & Macenza</span>
           </h2>
-          
+
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-inter mb-6">
-            Racenza operates as the dedicated USA branch of **Macenza Global Technology**, translating high-end complex engineering into hyper-intuitive digital products.
-          </p>
-          
-          <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-inter mb-8">
-            Through this elite partnership, our clients gain access to local USA architects, dedicated account management, and round-the-clock enterprise backing from hundreds of engineers globally. We bring the dream of luxurious, feminine, and futuristic SaaS interfaces to life.
+            Racenza operates as the dedicated USA branch of Macenza, translating high-end complex engineering into hyper-intuitive digital products.
           </p>
 
-          <Link 
-            to="/#contact" 
+          <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-inter mb-8">
+            Through this elite partnership, our clients gain access to local USA architects, dedicated account management, and round-the-clock enterprise backing from hundreds of engineers globally. We bring luxurious, modern, and futuristic SaaS interfaces to life.
+          </p>
+
+          <Link
+            to="/#contact"
             className="btn-luxury-gold px-8 py-3.5 rounded-full text-base font-semibold"
           >
             Learn Collaboration Details
